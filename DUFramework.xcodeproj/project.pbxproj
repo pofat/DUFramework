@@ -16,6 +16,8 @@
 		FA24F4931D62A0D6006A26EF /* DUFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24F4921D62A0D6006A26EF /* DUFrameworkTests.swift */; };
 		FA24F4951D62A0D6006A26EF /* DUFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA24F46B1D62A08F006A26EF /* DUFramework.framework */; };
 		FA24F49C1D62A0F8006A26EF /* DUNothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24F49B1D62A0F8006A26EF /* DUNothing.swift */; };
+		FA24F49D1D62B767006A26EF /* DUFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA24F46B1D62A08F006A26EF /* DUFramework.framework */; };
+		FA24F49E1D62B767006A26EF /* DUFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA24F46B1D62A08F006A26EF /* DUFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +28,28 @@
 			remoteGlobalIDString = FA24F46A1D62A08F006A26EF;
 			remoteInfo = DUFramework;
 		};
+		FA24F49F1D62B767006A26EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA24F4621D62A08F006A26EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA24F46A1D62A08F006A26EF;
+			remoteInfo = DUFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA24F4A11D62B768006A26EF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA24F49E1D62B767006A26EF /* DUFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA24F46B1D62A08F006A26EF /* DUFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DUFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA24F49D1D62B767006A26EF /* DUFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,10 +186,12 @@
 				FA24F4761D62A0BB006A26EF /* Sources */,
 				FA24F4771D62A0BB006A26EF /* Frameworks */,
 				FA24F4781D62A0BB006A26EF /* Resources */,
+				FA24F4A11D62B768006A26EF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FA24F4A01D62B767006A26EF /* PBXTargetDependency */,
 			);
 			name = DUExample;
 			productName = DUExample;
@@ -291,6 +317,11 @@
 			isa = PBXTargetDependency;
 			target = FA24F46A1D62A08F006A26EF /* DUFramework */;
 			targetProxy = FA24F4961D62A0D6006A26EF /* PBXContainerItemProxy */;
+		};
+		FA24F4A01D62B767006A26EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA24F46A1D62A08F006A26EF /* DUFramework */;
+			targetProxy = FA24F49F1D62B767006A26EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -444,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = DUExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pofat.DUExample;
@@ -455,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = DUExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pofat.DUExample;
