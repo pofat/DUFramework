@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = 'DUFramework'
   s.homepage = 'https://github.com/pofat/DUFramework'
-  s.version = '0.1.2'
+  s.version = '0.1.3'
   s.license = 'MIT'
   s.summary = 'A framework does nothing but looks cool (on github)'
   s.authors = { 'Pofat Tseng' => 'pofattseng@diuit.com' }
