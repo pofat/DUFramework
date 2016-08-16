@@ -16,11 +16,11 @@ matrix:
       env: FASTLANE_ENV=ios83
     - osx_image: xcode7.3
       env: FASTLANE_ENV=ios84
-    - osx_image: xcode7.3
-      env: FASTLANE_ENV=ios90
-    - osx_image: xcode7.3
-      env: FASTLANE_ENV=ios91
-    - osx_image: xcode7.3
+#    - osx_image: xcode7.3
+#      env: FASTLANE_ENV=ios90
+#    - osx_image: xcode7.3
+#      env: FASTLANE_ENV=ios91
+    - osx_image: xcode7.2
       env: FASTLANE_ENV=ios92
     - osx_image: xcode7.3
       env: FASTLANE_ENV=ios93
@@ -38,10 +38,10 @@ after_success:
   - if [ "$FASTLANE_LANE" == "code_coverage" ]; then
      bash <(curl -s https://codecov.io/bash);
     fi
-# after_failure:
-# - cat -n ~/Library/Logs/scan/*
-# - cat -n $TMPDIR/com.apple.dt.XCTest-status/Session*.log
-# - cat -n ~/Library/Logs/DiagnosticReports/xctest*.crash
+after_failure:
+ - cat -n ~/Library/Logs/scan/*
+ - cat -n $TMPDIR/com.apple.dt.XCTest-status/Session*.log
+ - cat -n ~/Library/Logs/DiagnosticReports/xctest*.crash
 # deploy:
 #   provider: script
 #   script: fastlane complete_framework_release --env deploy
