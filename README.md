@@ -50,7 +50,7 @@ $ pod install
 
 - If you **need help**, contact [me](mailto:pofattseng@diuit.com)
 - If you'd like to **ask a general question**, contact [me](mailto:pofattseng@diuit.com), too.
-- If you **found a bug**, _and can provide steps to reliably reproduce it_, open an issue.
+- If you **found a bug**, _and can provide steps to reliably reproduce it_, open an issue. I dare you.
 - If you **have a feature request**, please don't.
 - If you **want to contribute**, submit a pull request.
 
