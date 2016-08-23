@@ -25,4 +25,9 @@ class DUFrameworkTests: XCTestCase {
         let result: [String] = DUNothing.toDoList
         assert(result.contains("nothing"), "should contain 'nothing'")
     }
+    
+    func testMileStone() {
+        let result: [String] = DUNothing.mileStone
+        assert(result.contains("nothingAtAll"), "should contain 'nothingAtAll'")
+    }
 }
