@@ -18,7 +18,7 @@ For now we only support iOS platform. I will add more supported platforms if I g
 
 ## Installation with CocoaPods
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C and Swift, which automates and simplifies the process of using 3rd-party libraries like DUFramework in your projects. Since this framework actually does nothing, I strongly recommend you not to install it. Otherwise you WILL LOSE STORAGE SPACE FOR SEVERAL MBs. Anyway, you can install it with the following command (if you insist) :
+[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C and Swift, which automates and simplifies the process of using 3rd-party libraries like DUFramework in your projects. Since this framework actually does nothing, I strongly recommend you not to install it. Otherwise you WILL LOSE STORAGE SPACE for several MBs. Anyway, you can install it with the following command (if you insist) :
 
 ```bash
 $ gem install cocoapods
