@@ -2,7 +2,7 @@
   <img src="http://i.imgur.com/lQi4QUl.png" alt="DUFramework" title="DUFramework">
 </p>
 
-[![Build Status](https://travis-ci.org/pofat/DUFramework.svg)](https://travis-ci.org/pofat/DUFramework) [![codecov](https://codecov.io/gh/pofat/DUFramework/branch/develop/graph/badge.svg)](https://codecov.io/gh/pofat/DUFramework) ![pod version](https://img.shields.io/cocoapods/v/DUFramework.svg) ![platform](https://img.shields.io/cocoapods/p/DUFramework.svg?style=flat)
+[![Build Status](https://travis-ci.org/pofat/DUFramework.svg)](https://travis-ci.org/pofat/DUFramework) [![codecov](https://codecov.io/gh/pofat/DUFramework/branch/develop/graph/badge.svg)](https://codecov.io/gh/pofat/DUFramework) ![pod version](https://img.shields.io/cocoapods/v/DUFramework.svg) ![platform](https://img.shields.io/cocoapods/p/DUFramework.svg?style=flat) ![sync badge](https://img.shields.io/badge/%E5%90%8C%E6%AD%A5%E7%8E%87-400%25-red.svg)
 
 DUFramework is a framework that actually does nothing but looks cool on github. The source code is elegant, simple (just 4 lines) and easy to use.
 
@@ -24,11 +24,11 @@ For now we only support iOS platform. I will add more supported platforms if I g
 $ gem install cocoapods
 ```
 
-> CocoaPods 0.39.0+ is required to build AFNetworking 3.0.0+.
+> CocoaPods 0.39.0+ is required to build DUFramework 0.1.+.
 
 #### Podfile
 
-To integrate AFNetworking into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate DUFramework into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 platform :ios, '8.0'
@@ -58,5 +58,5 @@ $ pod install
 
 ## Reading material
 
-[This guide](https://hackmd.io/p/ryuud0Jc#/) shows you how to build this good looking and CI/CD available repo. 
+This [slide](https://hackmd.io/p/ryuud0Jc#/)/[document](https://github.com/pofat/iOS-Blog/blob/master/Notes/%E4%B9%9F%E4%BE%86%E5%AF%ABgithub%E5%A5%BD%E4%BA%86.md) guides you how to build this good looking and CI/CD available repo. 
 
