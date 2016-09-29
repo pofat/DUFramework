@@ -9,9 +9,9 @@
 import Foundation
 
 /// This class does as its name, nothing.
-public class DUNothing {
+open class DUNothing {
     /// You be surprised to get this list.
-    public static var toDoList: [String] { return ["nothing"] }
+    open static var toDoList: [String] { return ["nothing"] }
     /// Retrun the milestone
-    public static var mileStone: [String] { return ["nothingAtAll"] }
+    open static var mileStone: [String] { return ["nothingAtAll"] }
 }
