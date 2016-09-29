@@ -49,3 +49,6 @@ _Archive
 /fastlane/.env*private*
 fastlane/test-output/*
 fastlane/README.md
+
+# npm
+node_modules/
